@@ -16,7 +16,7 @@ Menu
 * [SQS](#SQS)
 * [SNS](#SNS)
 * [KINESIS](#KINESIS)
-* [DYNAMO_DB](#DYNAMO_DB)
+* [DYNAMO_DB](#DYNAMO*DB)
 * [RDS](#RDS)
 * [AWS CODEBUILD](#AWS_CODEBUILD)
 * [AWS CODEDEPLOY](#AWS_CODEDEPLOY)
@@ -142,7 +142,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 
 ## KINESIS
 
-## DYNAMO_DB
+## DYNAMO*DB
 1. Cơ chế Stateless
 2. Different Scan && Query?
 3. Different Items && Collections?
@@ -157,7 +157,7 @@ https://dynobase.dev/dynamodb-scan-vs-query
 
 ## RDS
 1. is an Online Transaction Processing (OLTP) type of database.
-2. Khi muốn migrate từ on-premies lên RDS nhưng db rất nặng => để re-factor => **Add a connection string to use an Amazon RDS <u>read replica</u> for read queries**
+2. Khi muốn migrate từ on-premies lên RDS nhưng db rất nặng => để re-factor => **Add a connection string to use an Amazon RDS ___read replica___ for read queries**
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-database/amazon-rds/
 
 ## AWS_CODEBUILD
