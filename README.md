@@ -111,7 +111,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html
 
 ## ELASTICACHE
-1. Web Stateless => Key/Value stores for storing session state date: [DYNAMO_DB](#DYNAMO_DB), [ELASTICACHE](#ELASTICACHE) Redis
+1. Web Stateless => Key/Value stores for storing session state date: [DYNAMO_DB](#DYNAMO_DB) (chỉ chứa dc 400KB), [ELASTICACHE](#ELASTICACHE)(mắc tiền) Redis, S3 (chưa confirm Stateless nhưng cũng chứa dc key/value)
 => **ElastiCache will provide the lowest latency as it is an in-memory database.**
 
 2. Different Sticky sessions && Destributed Cache?
