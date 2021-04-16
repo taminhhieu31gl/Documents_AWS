@@ -7,7 +7,7 @@ Menu
 * [ECS](#ECS) 
 * [EKS](#EKS) 
 * [EBS](#EBS) 
-* [API GATEWAY](#APIGATEWAY) 
+* [API GATEWAY](#API GATEWAY) 
 * [ROUTE 53](#ROUTE 53) 
 * [AWS LAMBDA](#AWS LAMBDA) 
 
