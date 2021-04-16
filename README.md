@@ -7,9 +7,9 @@ Menu
 * [ECS](#ECS) 
 * [EKS](#EKS) 
 * [EBS](#EBS) 
-* [API GATEWAY](#API GATEWAY) 
-* [ROUTE 53](#ROUTE 53) 
-* [AWS LAMBDA](#AWS LAMBDA) 
+* [API GATEWAY](#APIGATEWAY) 
+* [ROUTE 53](#ROUTE53) 
+* [AWS LAMBDA](#AWSLAMBDA) 
 
 
 ## DEPLOY
@@ -60,12 +60,12 @@ https://aws.amazon.com/vi/premiumsupport/knowledge-center/create-alb-auto-regist
 
 ## EBS
 
-## API GATEWAY
+## APIGATEWAY
 1. Cơ chế catche
 https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html
 
-## ROUTE 53
+## ROUTE53
 
 
-## AWS LAMBDA
+## AWSLAMBDA
 1. AWS Lambda is a stateless compute service
