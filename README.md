@@ -4,7 +4,8 @@ Menu
 * [Deploy](#DEPLOY): Deploy
 * [ECR](#ECR) 
 * [Parameters Store](#Parameters_Store)
-* [KMS](#KMS) 
+* [KMS](#KMS)
+* [EC2](#EC2) 
 * [ECS](#ECS) 
 * [EKS](#EKS) 
 * [EBS](#EBS) 
@@ -21,7 +22,8 @@ Menu
 * [RDS](#RDS)
 * [AWS CODEBUILD](#AWS_CODEBUILD)
 * [AWS CODEDEPLOY](#AWS_CODEDEPLOY)
-
+* [CLOUD FRONT](#CLOUD_FRONT)
+* [CLOUD FORMATION](#CLOUD_FORMATION)
 
 ## DEPLOY
 
@@ -61,6 +63,8 @@ aws ssm get-parameters --name Test --with-decryption =>hiển thị ra password 
 ```
 ## KMS
 1. Khi cần encrypted data trước khi gửi đến S3 => Use client-side encryption with a KMS managed CMK and SSL
+
+## EC2
 
 ## ECS
 https://aws.amazon.com/vi/premiumsupport/knowledge-center/create-alb-auto-register/
@@ -174,7 +178,9 @@ https://dynobase.dev/dynamodb-scan-vs-query
 ## RDS
 1. is an Online Transaction Processing (OLTP) type of database.
 2. Khi muốn migrate từ on-premies lên RDS nhưng db rất nặng => để re-factor => **Add a connection string to use an Amazon RDS ___read replica___ for read queries**
+
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-database/amazon-rds/
+
 [![RDS](https://d1.awsstatic.com/asset-repository/read-replicas-scaling-disaster-recovery.3b8da7093daeb1e87426225caf49e32efe7ae01a.png "RDS")](https://d1.awsstatic.com/asset-repository/read-replicas-scaling-disaster-recovery.3b8da7093daeb1e87426225caf49e32efe7ae01a.png "RDS")
 
 ## AWS_CODEBUILD
@@ -183,6 +189,28 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 
 ## AWS_CODEDEPLOY
 1. appspec.yaml structure = **BeforeAllowTraffic > AfterAllowTraffic**
-2. Deploy: EC2, on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
+2. Deploy: [EC2](#EC2), on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
+
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-developer-tools/aws-codedeploy/
 
+## CLOUD_FRONT
+1. **Is a Web services**. Uses Amazon CloudFront for caching content closer to users.
+2. Khi App đang xài ở trên thế giới => Dev update version => users are not able to see the latest changes.
+Nguyên nhân: do cache còn lưu bản cũ => xóa edge caches đi để version mới được lưu vào cache vào lần tới (**Invalidate all the application objects from the edge caches**)
+3. Different when deploy in [CLOUD FRONT](#CLOUD_FRONT) && [S3](#S3) && [EC2](#EC2) ??
+
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-networking-and-content-delivery/amazon-cloudfront/
+ 
+ ## CLOUD_FORMATION
+ 1. What is it?
+ 2. A CloudFormation stack needs to be deployed in several regions and requires a different Amazon Machine Image (AMI) in each region? => **dùng Mappings**
+ Example:
+```bash
+    "RegionMap" : {
+      "us-east-1"        : {"HVM64" : "ami-0ff8a91507f77f867", "HVMG2" : "ami-0a584ac55a7631c0c"},
+      "us-west-1"        : {"HVM64" : "ami-0bdb828fd58c52235", "HVMG2" : "ami-066ee5fd4a9ef77f1"},
+      "eu-west-1"        : {"HVM64" : "ami-047bb4163c506cd98", "HVMG2" : "ami-0a7c483d527806435"},
+      "ap-northeast-1"   : {"HVM64" : "ami-06cd52961ce9f0d85", "HVMG2" : "ami-053cdd503598e4a9d"},
+      "ap-southeast-1"   : {"HVM64" : "ami-08569b978cc4dfa10", "HVMG2" : "ami-0be9df32ae9f92309"}
+    }
+```
