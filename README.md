@@ -18,7 +18,7 @@ Menu
 * [SNS](#SNS)
 * [S3](#S3)
 * [KINESIS](#KINESIS)
-* [DYNAMO_DB](#DYNAMO_DB)
+* [DYNAMO DB](#DYNAMO_DB)
 * [RDS](#RDS)
 * [AWS CODEBUILD](#AWS_CODEBUILD)
 * [AWS CODEDEPLOY](#AWS_CODEDEPLOY)
@@ -76,6 +76,12 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 - binpack: giảm thiểu số phiên bản sử dụng
 - random: đặt task ngẫu nhiên
 - spread: đặt task đều dựa trên các giá trị sử dụng...
+
+3. Để task definition không xung đột port => **chỉ định port cho container và port 0 cho host port**
+Example:
+[![ECS](
+https://img-b.udemycdn.com/redactor/raw/2020-04-19_12-14-21-2e05425ee95cbc437d856fb9b53d6aa2.jpg?secure=1Ca7jDPh_rnWgpf_tr5aHQ%3D%3D%2C1618647458 "ECS")](
+https://img-b.udemycdn.com/redactor/raw/2020-04-19_12-14-21-2e05425ee95cbc437d856fb9b53d6aa2.jpg?secure=1Ca7jDPh_rnWgpf_tr5aHQ%3D%3D%2C1618647458 "ECS")
 
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/amazon-ecs/
 
