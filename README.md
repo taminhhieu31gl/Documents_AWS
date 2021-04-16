@@ -24,6 +24,9 @@ Menu
 * [AWS CODEDEPLOY](#AWS_CODEDEPLOY)
 * [CLOUD FRONT](#CLOUD_FRONT)
 * [CLOUD FORMATION](#CLOUD_FORMATION)
+* [CLOUD WATCH](#CLOUD_WATCH)
+* [CLOUD TRAIL](#CLOUD_TRAIL)
+
 
 ## DEPLOY
 
@@ -254,3 +257,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
       "ap-southeast-1"   : {"HVM64" : "ami-08569b978cc4dfa10", "HVMG2" : "ami-0be9df32ae9f92309"}
     }
 ```
+
+## CLOUD_WATCH
+ 
+## CLOUD_TRAIL
