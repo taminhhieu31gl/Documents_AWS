@@ -69,9 +69,10 @@ https://aws.amazon.com/vi/premiumsupport/knowledge-center/create-alb-auto-regist
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-volumes.html
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/amazon-ecs/
 2. Amazon ECS supports the following task placement strategies:
-binpack: giảm thiểu số phiên bản sử dụng
-random: đặt task ngẫu nhiên
-spread: đặt task đều dựa trên các giá trị sử dụng...
+- binpack: giảm thiểu số phiên bản sử dụng
+- random: đặt task ngẫu nhiên
+- spread: đặt task đều dựa trên các giá trị sử dụng...
+
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/amazon-ecs/
 
 ## EKS
@@ -79,31 +80,32 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 ## EBS
 
 AWS Elastic Beanstalk provides several options for how deployments are processed, including deployment policies and options that let you configure batch size and health check behavior during deployments.
-**All at once**: deploy 1 phát cho tất cả
+
+- **All at once**: deploy 1 phát cho tất cả
 
 · Deploys the new version to all instances simultaneously.
 
-**Rolling**: 
+- **Rolling**: 
 
 · Update a few instances at a time (bucket), and then move onto the next bucket once the first bucket is healthy (downtime for 1 bucket at a time).
 
-**Rolling with additional batch**:
+- **Rolling with additional batch**:
 
 · Like Rolling but launches new instances in a batch ensuring that there is full availability.
 
-**Immutable**:
+- **Immutable**:
 
 · Launches new instances in a new ASG and deploys the version update to these instances before swapping traffic to these instances once healthy.
 
 · Zero downtime.
 
-**Blue / Green deployment**:
+- **Blue / Green deployment**:
 
 · Zero downtime and release facility.
 
 · Create a new “stage” environment and deploy updates there.
 
-**EXAMPLE**
+- **EXAMPLE**
 Khi cần deploy version mới nhưng vẫn muốn giữ version hiện tại hoạt động ổn định=> **Rolling with additional batch**
 
 ## AWS_COGNITO
