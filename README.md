@@ -3,13 +3,13 @@ Menu
 * [docker](#): Lab document
 * [Deploy](#DEPLOY): Deploy
 * [ECR](#ECR) 
-* [Parameters Store](#Parameters Store) 
+* [Parameters Store](#Parameters_Store) 
 * [ECS](#ECS) 
 * [EKS](#EKS) 
 * [EBS](#EBS) 
-* [API GATEWAY](#APIGATEWAY) 
-* [ROUTE 53](#ROUTE53) 
-* [AWS LAMBDA](#AWSLAMBDA) 
+* [API GATEWAY](#API_GATEWAY) 
+* [ROUTE 53](#ROUTE_53) 
+* [AWS LAMBDA](#AWS_LAMBDA) 
 
 
 ## DEPLOY
@@ -37,7 +37,7 @@ docker tag hieutestecs:v1 148922931563.dkr.ecr.ap-southeast-1.amazonaws.com/hieu
 docker push 148922931563.dkr.ecr.ap-southeast-1.amazonaws.com/hieutademoecs
 ```
 
-## Parameters Store
+## Parameters_Store
 aws ssm get-parameters --name Test
 - Đặt tên parameter theo path: /my-app/prod/user && /my-app/prod/pass
 ```bash
@@ -60,12 +60,12 @@ https://aws.amazon.com/vi/premiumsupport/knowledge-center/create-alb-auto-regist
 
 ## EBS
 
-## APIGATEWAY
+## API_GATEWAY
 1. Cơ chế catche
 https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html
 
-## ROUTE53
+## ROUT_E53
 
 
-## AWSLAMBDA
+## AWS_LAMBDA
 1. AWS Lambda is a stateless compute service
