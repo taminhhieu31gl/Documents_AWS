@@ -9,8 +9,12 @@ Menu
 * [EBS](#EBS) 
 * [API GATEWAY](#API_GATEWAY) 
 * [ROUTE 53](#ROUTE_53) 
-* [AWS LAMBDA](#AWS_LAMBDA) 
-
+* [AWS LAMBDA](#AWS_LAMBDA)
+* [SQS](#SQS)
+* [SNS](#SNS)
+* [DYNAMO_DB](#DYNAMO_DB)
+* [RDS](#RDS)
+* [AWS CODEBUILD](#AWS_CODEBUILD)
 
 ## DEPLOY
 
@@ -68,4 +72,16 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 
 
 ## AWS_LAMBDA
-1. AWS Lambda is a stateless compute service
+1. AWS Lambda is a stateless compute service => cannot store session data in AWS Lambda itself
+
+## SQS
+
+## SNS
+
+## DYNAMO_DB
+
+## RDS
+
+## AWS_CODEBUILD
+1. Khi bị error stated that the length of all environment variables exceeds the limit for the combined maximum of characters
+=> dùng (#Parameters_Store) can store an individual environment variable (name and value added together) that is a combined 4,096 characters or less.
