@@ -8,7 +8,9 @@ Menu
 * [ECS](#ECS) 
 * [EKS](#EKS) 
 * [EBS](#EBS) 
+* [AWS COGNITO](#AWS_COGNITO) 
 * [API GATEWAY](#API_GATEWAY) 
+* [ELASTICACHE](#ELASTICACHE)
 * [ROUTE 53](#ROUTE_53) 
 * [AWS LAMBDA](#AWS_LAMBDA)
 * [SQS](#SQS)
@@ -17,7 +19,7 @@ Menu
 * [DYNAMO_DB](#DYNAMO_DB)
 * [RDS](#RDS)
 * [AWS CODEBUILD](#AWS_CODEBUILD)
-* [AWS CODEDEPLOY](#CODEDEPLOY)
+* [AWS CODEDEPLOY](#AWS_CODEDEPLOY)
 
 
 ## DEPLOY
@@ -62,7 +64,9 @@ aws ssm get-parameters --name Test --with-decryption =>hiển thị ra password 
 ## ECS
 https://aws.amazon.com/vi/premiumsupport/knowledge-center/create-alb-auto-register/
 => Config network -> Create EC2 -> Create Target Group -> Create LoadBalancer với 2 EC2 -> Tạo Task trong ECS sử dụng LoadBalancer -> Tạo Cluster -> Tạo service -> gắn lb nảy tạo vào
-
+1. Nhiều containers cần share data => tạo 1 task definition rồi **Mount a shared volume between those N containers** (ECS tasks support Docker volumes Docker Volume)
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-volumes.html
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/amazon-ecs/
 
 ## EKS
 
@@ -96,9 +100,21 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 **EXAMPLE**
 Khi cần deploy version mới nhưng vẫn muốn giữ version hiện tại hoạt động ổn định=> **Rolling with additional batch**
 
+## AWS_COGNITO
+1. Khi liên quan đến bên thứ ba (google, facebook,..) hoặc JWT
+[![COGNITO](COGNITO "COGNITO")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "COGNITO")
+
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-security-identity-and-compliance/aws-cognito/
+
 ## API_GATEWAY
 1. Cơ chế catche
 https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html
+
+## ELASTICACHE
+1. Web Stateless => Key/Value stores for storing session state date: [DYNAMO_DB](#DYNAMO_DB), [ELASTICACHE](#ELASTICACHE) Redis
+=> **ElastiCache will provide the lowest latency as it is an in-memory database.**
+
+
 
 ## ROUTE_53
 1. Khi deploy 1 website ở nhiều regions => sử dụng AWS ROUTE 53 và dùng latency-based routing policy
@@ -116,10 +132,23 @@ https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-s
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-application-integration/amazon-sqs/
 
 ## SNS
+1. Cần bắn events khi uploaded gì đó lên S3 => **add an event S3 -> use SNS Topic**
+
 
 ## KINESIS
 
 ## DYNAMO_DB
+1. Cơ chế Stateless
+2. Different Scan && Query?
+3. Different Items && Collections?
+4. DynamoDB Stream?
+5. Is DynamoDB query cheaper than scan? => Yes, why?
+6. What is the DynamoDB scan vs query performance difference?
+If you need to access data identified by known keys, query is much faster because of the direct access method.
+7. I need to use scan. Can I make it faster? => **using DynamoDB Parallel Scan**
+8. When scan periodically(định kỳ) => **Set a smaller page size for the scan**
+
+https://dynobase.dev/dynamodb-scan-vs-query
 
 ## RDS
 
