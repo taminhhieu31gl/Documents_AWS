@@ -68,6 +68,11 @@ https://aws.amazon.com/vi/premiumsupport/knowledge-center/create-alb-auto-regist
 1. Nhiều containers cần share data => tạo 1 task definition rồi **Mount a shared volume between those N containers** (ECS tasks support Docker volumes Docker Volume)
 https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-volumes.html
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/amazon-ecs/
+2. Amazon ECS supports the following task placement strategies:
+binpack: giảm thiểu số phiên bản sử dụng
+random: đặt task ngẫu nhiên
+spread: đặt task đều dựa trên các giá trị sử dụng...
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/amazon-ecs/
 
 ## EKS
 
@@ -125,7 +130,8 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 1. AWS Lambda is a stateless compute service => cannot store session data in AWS Lambda itself
 2. Lambda provides event source mappings for the following services (reads events): [KINESIS](#KINESIS), [DYNAMO_DB](#DYNAMO_DB), [SQS](#SQS)
 3. API Involke https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html
-
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/aws-lambda/
+4. /tmp space => **(khi function cần để download a large file,max size > 512 MB)?S3 : /tmp)**
 ## SQS
 1. Khi Queue xử lý messages không nổi (vì nhiều mess) => Use the **ReceiveMessage** API to retrieve up to 10 messages at a time
 2. Different Short Polling && Long Polling && Web Socket
