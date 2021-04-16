@@ -15,6 +15,7 @@ Menu
 * [AWS LAMBDA](#AWS_LAMBDA)
 * [SQS](#SQS)
 * [SNS](#SNS)
+* [S3](#S3)
 * [KINESIS](#KINESIS)
 * [DYNAMO_DB](#DYNAMO_DB)
 * [RDS](#RDS)
@@ -111,7 +112,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html
 
 ## ELASTICACHE
-1. Web Stateless => Key/Value stores for storing session state date: [DYNAMO_DB](#DYNAMO_DB) (chỉ chứa dc 400KB), [ELASTICACHE](#ELASTICACHE)(mắc tiền) Redis, S3 (chưa confirm Stateless nhưng cũng chứa dc key/value)
+1. Web Stateless => Key/Value stores for storing session state date: [DYNAMO_DB](#DYNAMO_DB) (chỉ chứa dc 400KB), [ELASTICACHE](#ELASTICACHE)(mắc tiền) Redis, (Optional: [S3](#S3) (không liên quan web stateless nhưng cũng chứa dc key/value))
 => **ElastiCache will provide the lowest latency as it is an in-memory database.**
 
 2. Different Sticky sessions && Destributed Cache?
@@ -139,6 +140,13 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 2. Cần bắn events khi uploaded gì đó lên S3 => **add an event S3 -> use SNS Topic**
 3. Push notifications => mess, mail... => **SNS**
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-application-integration/amazon-sns/
+
+## S3
+___Exam tip: The AWS Certified Developer Associate exam tests your understanding of S3 encryption heavily. Make sure you understand S3 encryption well before taking the exam.___
+[![S3](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2019/03/Amazon-S3-Encryption-Options-768x280.jpg "S3")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2019/03/Amazon-S3-Encryption-Options-768x280.jpg "S3")
+
+
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-storage/amazon-s3/
 
 ## KINESIS
 
