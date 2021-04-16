@@ -102,7 +102,7 @@ Khi cần deploy version mới nhưng vẫn muốn giữ version hiện tại ho
 
 ## AWS_COGNITO
 1. Khi liên quan đến bên thứ ba (google, facebook,..) hoặc JWT
-[![COGNITO](COGNITO "COGNITO")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "COGNITO")
+[![AWS_COGNITO](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "Test")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "Test")
 
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-security-identity-and-compliance/aws-cognito/
 
