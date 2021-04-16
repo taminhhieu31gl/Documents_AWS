@@ -1,7 +1,6 @@
 Menu
 =============
 * [docker](#): Lab document
-* [Deploy](#DEPLOY): Deploy
 * [ECR](#ECR) 
 * [Parameters Store](#Parameters_Store)
 * [KMS](#KMS)
@@ -27,8 +26,6 @@ Menu
 * [CLOUD WATCH](#CLOUD_WATCH)
 * [CLOUD TRAIL](#CLOUD_TRAIL)
 
-
-## DEPLOY
 
 ## ECR
 StepByStep to deploy images to ECR:
