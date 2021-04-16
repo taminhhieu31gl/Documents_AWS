@@ -64,7 +64,7 @@ https://aws.amazon.com/vi/premiumsupport/knowledge-center/create-alb-auto-regist
 1. Cơ chế catche
 https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html
 
-## ROUT_E53
+## ROUTE_53
 
 
 ## AWS_LAMBDA
