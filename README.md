@@ -157,7 +157,7 @@ https://dynobase.dev/dynamodb-scan-vs-query
 
 ## RDS
 1. is an Online Transaction Processing (OLTP) type of database.
-2. Khi muốn migrate từ on-premies lên RDS nhưng db rất nặng => để re-factor => **Add a connection string to use an Amazon RDS <h2>read replica</h2> for read queries**
+2. Khi muốn migrate từ on-premies lên RDS nhưng db rất nặng => để re-factor => **Add a connection string to use an Amazon RDS <u>read replica</u> for read queries**
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-database/amazon-rds/
 
 ## AWS_CODEBUILD
