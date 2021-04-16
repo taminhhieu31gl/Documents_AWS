@@ -16,7 +16,7 @@ Menu
 * [SQS](#SQS)
 * [SNS](#SNS)
 * [KINESIS](#KINESIS)
-* [DYNAMO_DB](#DYNAMO*DB)
+* [DYNAMO_DB](#DYNAMO_DB)
 * [RDS](#RDS)
 * [AWS CODEBUILD](#AWS_CODEBUILD)
 * [AWS CODEDEPLOY](#AWS_CODEDEPLOY)
@@ -102,7 +102,7 @@ Khi cần deploy version mới nhưng vẫn muốn giữ version hiện tại ho
 
 ## AWS_COGNITO
 1. Khi liên quan đến bên thứ ba (google, facebook,..) hoặc JWT
-[![AWS_COGNITO](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "Test")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "Test")
+[![AWS_COGNITO](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "AWS_COGNITO")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "AWS_COGNITO")
 
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-security-identity-and-compliance/aws-cognito/
 
@@ -142,7 +142,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 
 ## KINESIS
 
-## DYNAMO*DB
+## DYNAMO_DB
 1. Cơ chế Stateless
 2. Different Scan && Query?
 3. Different Items && Collections?
@@ -159,6 +159,7 @@ https://dynobase.dev/dynamodb-scan-vs-query
 1. is an Online Transaction Processing (OLTP) type of database.
 2. Khi muốn migrate từ on-premies lên RDS nhưng db rất nặng => để re-factor => **Add a connection string to use an Amazon RDS ___read replica___ for read queries**
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-database/amazon-rds/
+[![RDS](https://d1.awsstatic.com/asset-repository/read-replicas-scaling-disaster-recovery.3b8da7093daeb1e87426225caf49e32efe7ae01a.png "RDS")](https://d1.awsstatic.com/asset-repository/read-replicas-scaling-disaster-recovery.3b8da7093daeb1e87426225caf49e32efe7ae01a.png "RDS")
 
 ## AWS_CODEBUILD
 1. Khi bị error stated that the length of all environment variables exceeds the limit for the combined maximum of characters
