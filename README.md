@@ -114,7 +114,8 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 1. Web Stateless => Key/Value stores for storing session state date: [DYNAMO_DB](#DYNAMO_DB), [ELASTICACHE](#ELASTICACHE) Redis
 => **ElastiCache will provide the lowest latency as it is an in-memory database.**
 
-
+2. Different Sticky sessions && Destributed Cache?
+3. **A Distributed cache is suitable for storing session state data** => Using [ELASTICACHE](#ELASTICACHE)
 
 ## ROUTE_53
 1. Khi deploy 1 website ở nhiều regions => sử dụng AWS ROUTE 53 và dùng latency-based routing policy
@@ -122,7 +123,7 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 ## AWS_LAMBDA
 1. AWS Lambda is a stateless compute service => cannot store session data in AWS Lambda itself
 2. Lambda provides event source mappings for the following services (reads events): [KINESIS](#KINESIS), [DYNAMO_DB](#DYNAMO_DB), [SQS](#SQS)
-
+3. API Involke https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html
 
 ## SQS
 1. Khi Queue xử lý messages không nổi (vì nhiều mess) => Use the **ReceiveMessage** API to retrieve up to 10 messages at a time
@@ -130,10 +131,14 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-short-and-long-polling.html
 4. Để giảm chi phí SQS -> chuyển sang impl Long Polling bằng cách **Set the ```bash ReceiveMessage``` API with a WaitTimeSeconds of 20**
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-application-integration/amazon-sqs/
+5. Dead Letter Queue (DLQ) cơ chế hàng đợi những mess không được gửi đi, bị "chết"....
+=> Khi [AWS LAMBDA](#AWS_LAMBDA) function gọi [SNS](#SNS) lỗi liên tục => config DLQ trong [AWS LAMBDA](#AWS_LAMBDA) để xem log
 
 ## SNS
-1. Cần bắn events khi uploaded gì đó lên S3 => **add an event S3 -> use SNS Topic**
-
+1. Cơ chế Pub/Sub? (Optional: phân biệt với cơ chế P2P trong JMS (java))
+2. Cần bắn events khi uploaded gì đó lên S3 => **add an event S3 -> use SNS Topic**
+3. Push notifications => mess, mail... => **SNS**
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-application-integration/amazon-sns/
 
 ## KINESIS
 
@@ -151,6 +156,9 @@ If you need to access data identified by known keys, query is much faster becaus
 https://dynobase.dev/dynamodb-scan-vs-query
 
 ## RDS
+1. is an Online Transaction Processing (OLTP) type of database.
+2. Khi muốn migrate từ on-premies lên RDS nhưng db rất nặng => để re-factor => **Add a connection string to use an Amazon RDS <h2>read replica</h2> for read queries**
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-database/amazon-rds/
 
 ## AWS_CODEBUILD
 1. Khi bị error stated that the length of all environment variables exceeds the limit for the combined maximum of characters
@@ -158,3 +166,6 @@ https://dynobase.dev/dynamodb-scan-vs-query
 
 ## AWS_CODEDEPLOY
 1. appspec.yaml structure = **BeforeAllowTraffic > AfterAllowTraffic**
+2. Deploy: EC2, on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
+https://digitalcloud.training/certification-training/aws-developer-associate/aws-developer-tools/aws-codedeploy/
+
