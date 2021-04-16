@@ -78,6 +78,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 - spread: đặt task đều dựa trên các giá trị sử dụng...
 
 3. Để task definition không xung đột port => **chỉ định port cho container và port 0 cho host port**
+
 Example:
 [![ECS](
 https://img-b.udemycdn.com/redactor/raw/2020-04-19_12-14-21-2e05425ee95cbc437d856fb9b53d6aa2.jpg?secure=1Ca7jDPh_rnWgpf_tr5aHQ%3D%3D%2C1618647458 "ECS")](
@@ -115,8 +116,9 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 
 · Create a new “stage” environment and deploy updates there.
 
-- **EXAMPLE**
+Example:
 Khi cần deploy version mới nhưng vẫn muốn giữ version hiện tại hoạt động ổn định=> **Rolling with additional batch**
+Khi cần thiết cập nhật code nhanh chóng => **Blue/Green**
 
 ## AWS_COGNITO
 1. Khi liên quan đến bên thứ ba (google, facebook,..) hoặc JWT
@@ -133,7 +135,32 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 => **ElastiCache will provide the lowest latency as it is an in-memory database.**
 
 2. Different Sticky sessions && Destributed Cache?
-3. **A Distributed cache is suitable for storing session state data** => Using [ELASTICACHE](#ELASTICACHE)
+3. A Distributed cache is suitable for storing session state data => **Using [ELASTICACHE](#ELASTICACHE)**
+4. **IMPORTANT:** fully managed implementation of two popular in-memory data stores – **Redis** && **Memcached**
+5. Different **Redis** && **Memcached**?
+<table>
+ <tr>
+  <th>MEMCACHED</th>
+  <th>REDIS</th>
+ </tr>
+ <tr>
+  <td>Simplest model and can run large nodes.</td>
+  <td>Open-source in-memory key-value store.</td>
+ </tr>
+ <tr>
+  <td>Can be scaled in and out and cache objects such as DBs.</td>
+  <td>Supports more complex data structures: sorted sets and lists.</td>
+ </tr>
+ <tr>
+  <td>Widely adopted memory object caching system.</td>
+  <td>Supports master / slave replication and multi-AZ for cross-AZ redundancy.</td>
+ </tr>
+ <tr>
+  <td>Multi-threaded.</td>
+  <td>Support automatic failover and backup/restore.</td>
+ </tr> 
+</table>
+
 
 ## ROUTE_53
 1. Khi deploy 1 website ở nhiều regions => sử dụng AWS ROUTE 53 và dùng latency-based routing policy
@@ -144,6 +171,8 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 3. API Involke https://docs.aws.amazon.com/lambda/latest/dg/API_Invoke.html
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-compute/aws-lambda/
 4. /tmp space => **(khi function cần để download a large file,max size > 512 MB)?S3 : /tmp)**
+
+
 ## SQS
 1. Khi Queue xử lý messages không nổi (vì nhiều mess) => Use the **ReceiveMessage** API to retrieve up to 10 messages at a time
 2. Different Short Polling && Long Polling && Web Socket
@@ -189,13 +218,18 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 
 [![RDS](https://d1.awsstatic.com/asset-repository/read-replicas-scaling-disaster-recovery.3b8da7093daeb1e87426225caf49e32efe7ae01a.png "RDS")](https://d1.awsstatic.com/asset-repository/read-replicas-scaling-disaster-recovery.3b8da7093daeb1e87426225caf49e32efe7ae01a.png "RDS")
 
+3.Khi cần multi-threaded in-memory cache ở RDS => **[ELASTICACHE](#ELASTICACHE) Memcached**
+
+
 ## AWS_CODEBUILD
-1. Khi bị error stated that the length of all environment variables exceeds the limit for the combined maximum of characters
+1. **buildspec.yml**
+2. Khi bị error stated that the length of all environment variables exceeds the limit for the combined maximum of characters
 => dùng (#Parameters_Store) can store an individual environment variable (name and value added together) that is a combined 4,096 characters or less.
 
 ## AWS_CODEDEPLOY
-1. appspec.yaml structure = **BeforeAllowTraffic > AfterAllowTraffic**
-2. Deploy: [EC2](#EC2), on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
+1. Preparing to deploy using CodeDeploy => **appspec.yaml**
+2. appspec.yaml structure = **BeforeAllowTraffic > AfterAllowTraffic**
+3. Deploy: [EC2](#EC2), on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
 
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-developer-tools/aws-codedeploy/
 
