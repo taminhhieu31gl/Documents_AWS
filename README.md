@@ -16,6 +16,7 @@ Menu
 * [SQS](#SQS)
 * [SNS](#SNS)
 * [SES](#SES)
+* [SWF](#SWF)
 * [S3](#S3)
 * [KINESIS](#KINESIS)
 * [DYNAMO DB](#DYNAMO_DB)
@@ -190,8 +191,12 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 4. generate SMS text messages and emails for a large number of subscibers
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-application-integration/amazon-sns/
 
-## SSS
-1. 
+## SES
+1. this service only sends email, not SMS text messages
+
+## SWF
+1. Simple Workflow Service is used for orchestrating multi-step workflows.
+
 ## S3
 ___Exam tip: The AWS Certified Developer Associate exam tests your understanding of S3 encryption heavily. Make sure you understand S3 encryption well before taking the exam.___
 [![S3](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2019/03/Amazon-S3-Encryption-Options-768x280.jpg "S3")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2019/03/Amazon-S3-Encryption-Options-768x280.jpg "S3")
