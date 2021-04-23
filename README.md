@@ -15,6 +15,7 @@ Menu
 * [AWS LAMBDA](#AWS_LAMBDA)
 * [SQS](#SQS)
 * [SNS](#SNS)
+* [SES](#SES)
 * [S3](#S3)
 * [KINESIS](#KINESIS)
 * [DYNAMO DB](#DYNAMO_DB)
@@ -186,8 +187,11 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 1. Cơ chế Pub/Sub? (Optional: phân biệt với cơ chế P2P trong JMS (java))
 2. Cần bắn events khi uploaded gì đó lên S3 => **add an event S3 -> use SNS Topic**
 3. Push notifications => mess, mail... => **SNS**
+4. generate SMS text messages and emails for a large number of subscibers
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-application-integration/amazon-sns/
 
+## SSS
+1. 
 ## S3
 ___Exam tip: The AWS Certified Developer Associate exam tests your understanding of S3 encryption heavily. Make sure you understand S3 encryption well before taking the exam.___
 [![S3](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2019/03/Amazon-S3-Encryption-Options-768x280.jpg "S3")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2019/03/Amazon-S3-Encryption-Options-768x280.jpg "S3")
@@ -230,7 +234,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 1. Preparing to deploy using CodeDeploy => **appspec.yaml**
 2. appspec.yaml structure = **BeforeAllowTraffic > AfterAllowTraffic**
 3. Deploy: [EC2](#EC2), on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
-
+4. Use AWS CodeDeploy to create multiple deployment groups
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-developer-tools/aws-codedeploy/
 
 ## CLOUD_FRONT
