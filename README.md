@@ -166,6 +166,7 @@ https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching
 
 ## ROUTE_53
 1. Khi deploy 1 website ở nhiều regions => sử dụng AWS ROUTE 53 và dùng latency-based routing policy
+![image](https://user-images.githubusercontent.com/42288000/137514144-87553f32-509f-4ad2-af4d-2654e67039e0.png)
 
 ## AWS_LAMBDA
 1. AWS Lambda is a stateless compute service => cannot store session data in AWS Lambda itself
