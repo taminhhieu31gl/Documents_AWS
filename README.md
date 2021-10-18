@@ -226,6 +226,8 @@ NEW_AND_OLD_IMAGES — Both the new and the old images of the item.
 If you need to access data identified by known keys, query is much faster because of the direct access method.
 7. I need to use scan. Can I make it faster? => **using DynamoDB Parallel Scan**
 8. When scan periodically(định kỳ) => **Set a smaller page size for the scan**
+=> Different Isolate scan operations
+
 
 https://dynobase.dev/dynamodb-scan-vs-query
 
