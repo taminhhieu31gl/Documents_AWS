@@ -212,8 +212,17 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 2. Different Scan && Query?
 3. Different Items && Collections?
 4. DynamoDB Stream?
-5. Is DynamoDB query cheaper than scan? => Yes, why?
-6. What is the DynamoDB scan vs query performance difference?
+Hiểu basic là sync-data realtime
+Có 2 thuộc tính:
+- StreamEnabled — Specifies whether a stream is enabled (true) or disabled (false) for the table.
+- StreamViewType — Specifies the information that will be written to the stream whenever data in the table is modified:
++ KEYS_ONLY — Only the key attributes of the modified item.
++ NEW_IMAGE — The entire item, as it appears after it was modified.
++ OLD_IMAGE — The entire item, as it appeared before it was modified.
+
+NEW_AND_OLD_IMAGES — Both the new and the old images of the item.
+6. Is DynamoDB query cheaper than scan? => Yes, why?
+7. What is the DynamoDB scan vs query performance difference?
 If you need to access data identified by known keys, query is much faster because of the direct access method.
 7. I need to use scan. Can I make it faster? => **using DynamoDB Parallel Scan**
 8. When scan periodically(định kỳ) => **Set a smaller page size for the scan**
