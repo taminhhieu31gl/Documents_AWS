@@ -260,6 +260,7 @@ Nguyên nhân: do cache còn lưu bản cũ => xóa edge caches đi để versio
 3. Different when deploy in [CLOUD FRONT](#CLOUD_FRONT) && [S3](#S3) && [EC2](#EC2) ??
 
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-networking-and-content-delivery/amazon-cloudfront/
+4. Different between Origin/Viewer Request/Response 
  ![image](https://user-images.githubusercontent.com/42288000/138714323-f19dfa77-9655-46b3-96d3-097b606c24cf.png)
 
  ## CLOUD_FORMATION
