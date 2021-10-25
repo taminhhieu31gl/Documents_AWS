@@ -260,7 +260,8 @@ Nguyên nhân: do cache còn lưu bản cũ => xóa edge caches đi để versio
 3. Different when deploy in [CLOUD FRONT](#CLOUD_FRONT) && [S3](#S3) && [EC2](#EC2) ??
 
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-networking-and-content-delivery/amazon-cloudfront/
- 
+ ![image](https://user-images.githubusercontent.com/42288000/138714323-f19dfa77-9655-46b3-96d3-097b606c24cf.png)
+
  ## CLOUD_FORMATION
  1. What is it?
  2. A CloudFormation stack needs to be deployed in several regions and requires a different Amazon Machine Image (AMI) in each region? => **dùng Mappings**
