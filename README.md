@@ -65,6 +65,8 @@ aws ssm get-parameters --name Test --with-decryption =>hiển thị ra password 
 ```
 ## KMS
 1. Khi cần encrypted data trước khi gửi đến S3 => Use client-side encryption with a KMS managed CMK and SSL
+2. 
+![image](https://user-images.githubusercontent.com/42288000/139084062-012d0e09-fac7-4666-9a12-63b11a9a8984.png)
 
 ## EC2
 
