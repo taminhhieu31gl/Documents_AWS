@@ -234,6 +234,9 @@ If you need to access data identified by known keys, query is much faster becaus
 7. I need to use scan. Can I make it faster? => **using DynamoDB Parallel Scan**
 8. When scan periodically(định kỳ) => **Set a smaller page size for the scan**
 => Different Isolate scan operations
+9. @HoanNK4 => Session tính toán eventully vs strong 
+![image](https://user-images.githubusercontent.com/42288000/139094493-2267054d-90da-482c-969b-0c1c5c064048.png)
+
 
 
 ## RDS
