@@ -127,6 +127,10 @@ Khi cần thiết cập nhật code nhanh chóng => **Blue/Green**
 ## AWS_COGNITO
 1. Khi liên quan đến bên thứ ba (google, facebook,..) hoặc JWT
 [![AWS_COGNITO](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "AWS_COGNITO")](https://mk0learndigital3jsdb.kinstacdn.com/wp-content/uploads/2020/04/Amazon-Cognito-User-Pool-Token-600x496.jpg "AWS_COGNITO")
+2. The two main components of AWS Cognito are user pools and identity pools:
+
+**User pools** are user directories that provide sign-up and sign-in options for your **app users**.
+**Identity pools** enable you to grant your users access to **other AWS services**.
 
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-security-identity-and-compliance/aws-cognito/
 
