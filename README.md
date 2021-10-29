@@ -68,6 +68,7 @@ aws ssm get-parameters --name Test --with-decryption =>hiển thị ra password 
 2. 
 ![image](https://user-images.githubusercontent.com/42288000/139084062-012d0e09-fac7-4666-9a12-63b11a9a8984.png)
 
+3. KMS does not store, manage or track data keys, you are responsible for this in your application.
 ## EC2
 
 ## ECS
