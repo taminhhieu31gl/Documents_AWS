@@ -109,6 +109,8 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 - **Rolling with additional batch**:
 
 · Like Rolling but launches new instances in a batch ensuring that there is full availability.
+![image](https://user-images.githubusercontent.com/42288000/140940494-f746171f-25ce-4a13-9835-862490ab0d4e.png)
+
 
 - **Immutable**:
 
