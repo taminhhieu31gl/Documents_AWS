@@ -27,6 +27,7 @@ Menu
 * [CLOUD FORMATION](#CLOUD_FORMATION)
 * [CLOUD WATCH](#CLOUD_WATCH)
 * [CLOUD TRAIL](#CLOUD_TRAIL)
+* * [IAM](#IAM)
 
 
 ## ECR
@@ -290,3 +291,7 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 ## CLOUD_WATCH
  
 ## CLOUD_TRAIL
+
+## IAM
+1. Different manage policy vs inline policy
+
