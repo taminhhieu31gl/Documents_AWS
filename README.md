@@ -117,6 +117,8 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 · Launches new instances in a new ASG and deploys the version update to these instances before swapping traffic to these instances once healthy.
 
 · Zero downtime.
+![image](https://user-images.githubusercontent.com/42288000/140947520-ce4ef2d8-7a44-402f-b68d-81324b45373d.png)
+
 
 - **Blue / Green deployment**:
 
