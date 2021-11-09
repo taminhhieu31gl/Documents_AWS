@@ -242,7 +242,9 @@ If you need to access data identified by known keys, query is much faster becaus
 => Different Isolate scan operations
 9. @HoanNK4 => Session tính toán eventully vs strong 
 ![image](https://user-images.githubusercontent.com/42288000/139094493-2267054d-90da-482c-969b-0c1c5c064048.png)
+![image](https://user-images.githubusercontent.com/42288000/140948293-24aa9819-bc73-45ae-bb8f-13c47ea23898.png)
 
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html
 
 
 ## RDS
