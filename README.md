@@ -262,8 +262,11 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 ## AWS_CODEDEPLOY
 1. Preparing to deploy using CodeDeploy => **appspec.yaml**
 2. appspec.yaml structure = **BeforeAllowTraffic > AfterAllowTraffic**
-3. Deploy: [EC2](#EC2), on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
-4. Use AWS CodeDeploy to create multiple deployment groups
+3. codedeploy => run order of the hooks
+![image](https://user-images.githubusercontent.com/42288000/140941507-d565ca06-3c20-4751-8a18-71ca64f127fa.png)
+
+4. Deploy: [EC2](#EC2), on-premises, [AWS LAMBDA](#AWS_LAMBDA), [ECS](#ECS)
+5. Use AWS CodeDeploy to create multiple deployment groups
 https://digitalcloud.training/certification-training/aws-developer-associate/aws-developer-tools/aws-codedeploy/
 
 ## CLOUD_FRONT
