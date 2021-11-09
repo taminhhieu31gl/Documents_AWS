@@ -27,7 +27,7 @@ Menu
 * [CLOUD FORMATION](#CLOUD_FORMATION)
 * [CLOUD WATCH](#CLOUD_WATCH)
 * [CLOUD TRAIL](#CLOUD_TRAIL)
-* * [IAM](#IAM)
+* [IAM](#IAM)
 
 
 ## ECR
@@ -299,4 +299,10 @@ https://digitalcloud.training/certification-training/aws-developer-associate/aws
 
 ## IAM
 1. Different manage policy vs inline policy
+2. Use IAM policy
+A.	condition:
+B.	principal:
+C.	variables: 
+D.	resource: 
+
 
