@@ -105,6 +105,8 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 - **Rolling**: 
 
 · Update a few instances at a time (bucket), and then move onto the next bucket once the first bucket is healthy (downtime for 1 bucket at a time).
+![image](https://user-images.githubusercontent.com/42288000/141314822-9dae7548-e911-4d70-9974-93525832640d.png)
+
 
 - **Rolling with additional batch**:
 
