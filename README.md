@@ -120,6 +120,7 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 
 · Zero downtime.
 ![image](https://user-images.githubusercontent.com/42288000/140947520-ce4ef2d8-7a44-402f-b68d-81324b45373d.png)
+![image](https://user-images.githubusercontent.com/42288000/141800412-c91f69a3-4d7a-4556-a381-5dc3c9402c0b.png)
 
 
 - **Blue / Green deployment**:
