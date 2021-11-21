@@ -244,11 +244,12 @@ If you need to access data identified by known keys, query is much faster becaus
 7. I need to use scan. Can I make it faster? => **using DynamoDB Parallel Scan**
 8. When scan periodically(định kỳ) => **Set a smaller page size for the scan**
 => Different Isolate scan operations
-9. @HoanNK4 => Session tính toán eventully vs strong 
+9. @Hoann03  => Session tính toán eventully vs strong 
 ![image](https://user-images.githubusercontent.com/42288000/139094493-2267054d-90da-482c-969b-0c1c5c064048.png)
 ![image](https://user-images.githubusercontent.com/42288000/140948293-24aa9819-bc73-45ae-bb8f-13c47ea23898.png)
 ![image](https://user-images.githubusercontent.com/42288000/141665406-391b4d49-f2e3-4e5d-8a2e-6130b89df378.png)
 ![image](https://user-images.githubusercontent.com/42288000/142008885-0d8ee925-fb20-4af2-a1f3-5bc0819371e4.png)
+![image](https://user-images.githubusercontent.com/42288000/142747023-3cc7e27f-06f4-432b-82a7-bae2d78f08ed.png)
 
 https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html
 
